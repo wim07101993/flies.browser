@@ -2,18 +2,27 @@
   <html>
     <head>
         <style>
-            
+            #content {
+                padding: 25px;
+            }
         </style>
         <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
     </head>
     <body>
-        <div>
+        <div id="content">
             <form action="#">
-                <label for="ipAddress">Server ip address</label><br>
-                <input type="text" name="ipAddress" value="localhost"><br>
-            </form> 
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input id="ipAddress" class="mdl-textfield__input" type="text" name="ipAddress" value="localhost">
+                    <label class="mdl-textfield__label" for="ipAddress">Server ip address</label>
+                </div>
+            </form>
+            <button id="save" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+                Save
+            </button>
         </div>
     </body>
     
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="options.js"></script>
+    <script src="mdl/material.min.js"></script>
   </html>
