@@ -1,0 +1,6 @@
+{
+    "name": "Flies",
+    "version": "1.0",
+    "description": "A browser extension for the Fly-swatting-contest",
+    "manifest_version": 2
+}
