@@ -1,6 +1,10 @@
-let changeColor = document.getElementById('changeColor');
+let increaseScore = document.getElementById('increaseScore');
+let apiAddress = "localhost:5000"
 
-chrome.storage.sync.get('color', function(data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
+chrome.storage.sync.get('apiAddress', function(data) {
+    apiAddress = data.apiAddress
 });
+
+increaseScore.onclick = function(element) {
+    console.log("Squashed a fly");
+};
