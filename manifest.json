@@ -13,6 +13,7 @@
             "240": "images/icon240.png"
         }
     },
+    "options_page": "options.html",
     "icons": {
         "16": "images/icon16.png",
         "32": "images/icon32.png",
@@ -26,7 +27,8 @@
     "content_scripts": [
         {
           "matches": ["http://*/*","https://*/*"],
-          "js": ["jquery-3.4.1.min.js"]
+          "js": ["jquery-3.4.1.min.js", "mdl/material.min.js"],
+          "css": ["mdl/material.min.css"]
         }
     ],
     "manifest_version": 2

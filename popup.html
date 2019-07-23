@@ -1,26 +1,36 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <style>
+      <style>
+        #content {
+          width: 155px;
+          height: 70px;
+          padding: 25px;
+        }
         button {
-          height: 30px;
-          width: 150px;
           outline: none;
         }
         select {
           margin-bottom: 10px;
           width: 100px;
         }
-        </style>
+      </style>
+      <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
     </head>
     <body>
+      <div id="content">
         <select id="player">
           <option value="1">Wim</option>
           <option value="2">Dimitri</option>
         </select>
-        <button id="increaseScore">Squashed a fly</button>
+        <br/>
+        <button id="increaseScore" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+          Squashed a fly
+        </button>
+      </div>
 
-        <script src="jquery-3.4.1.min.js"></script>
-        <script src="popup.js"></script>
+      <script src="jquery-3.4.1.min.js"></script>
+      <script src="popup.js"></script>
+      <script src="mdl/material.min.js"></script>
     </body>
   </html>
