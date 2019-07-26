@@ -14,15 +14,17 @@
           margin-bottom: 10px;
           width: 100px;
         }
+        #score {
+          margin-left: 10px;
+          display: inline;
+        }
       </style>
       <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
     </head>
     <body>
       <div id="content">
-        <select id="player">
-          <option value="1">Wim</option>
-          <option value="2">Dimitri</option>
-        </select>
+        <select id="player"></select>
+        <p id="score"></p>
         <br/>
         <button id="increaseScore" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
           Squashed a fly
