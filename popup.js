@@ -69,6 +69,7 @@ function getParticipants() {
 
 function setParticipants(participants) {
     _participants = participants;
+    $("#player").empty();
     _participants.forEach(participant => {
         $("#player").append(new Option(participant.name, participant.id));
     });
