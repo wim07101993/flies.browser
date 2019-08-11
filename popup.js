@@ -21,7 +21,7 @@ $('#increaseScore').click(increaseScore);
 
 $('#player').change(() => setParticipantId($('#player option:selected').val()));
 
-$(document).ready(() => updateParticipants(() => $("#player").val(getParticipantId()).change()));
+$(document).ready(updateParticipants);
 
 // ---------------- FUNCTIONS ----------------
 
@@ -33,12 +33,11 @@ function updateScore() {
     $('#score').text(participant.score);
 }
 
-function updateParticipants(callback) {
+function updateParticipants() {
     console.log("fetch participants")
     $.get(`${_apiAddress}/api/participants`, data => {
         setParticipants(data);
-        if (callback != null)
-            callback();
+        $("#player").val(getParticipantId()).change()
     });
 }
 
