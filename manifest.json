@@ -1,6 +1,6 @@
 {
     "name": "Flies",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A browser extension for the Fly-swatting-contest",
     "permissions": ["storage"],
     "browser_action": {
