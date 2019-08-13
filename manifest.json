@@ -24,11 +24,5 @@
     "background": {
         "scripts": ["jquery-3.4.1.min.js"]
     },
-    "content_scripts": [
-        {
-          "js": ["jquery-3.4.1.min.js", "mdl/material.min.js"],
-          "css": ["mdl/material.min.css"]
-        }
-    ],
     "manifest_version": 2
 }
