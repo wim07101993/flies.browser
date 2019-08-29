@@ -1,28 +1,36 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
+        <title>Options</title>
         <style>
             #content {
                 padding: 25px;
             }
+            #save {
+                width: 50px;
+            }
         </style>
         <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <div id="content">
-            <form action="#">
+            <form action="#" id="settingForm">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input id="apiAddress" class="mdl-textfield__input" type="text" name="apiAddress" value="localhost">
+                    <input id="apiAddress" class="mdl-textfield__input" type="text" name="apiAddress" value="localhost:5000">
                     <label class="mdl-textfield__label" for="apiAddress">Server ip address</label>
                 </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input id="webAppAddress" class="mdl-textfield__input" type="text" name="webAppAddress" value="localhost">
+                    <label class="mdl-textfield__label" for="webAppAddress">WebApp ip address</label>
+                </div>
+
+                <input id="save" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" type="submint" value="Save">
             </form>
-            <button id="save" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-                Save
-            </button>
         </div>
-    </body>
     
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="options.js"></script>
-    <script src="mdl/material.min.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="options.js"></script>
+        <script src="mdl/material.min.js"></script>
+    </body>
   </html>

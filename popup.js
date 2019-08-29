@@ -10,10 +10,14 @@ chrome.storage.sync.get('apiAddress', function(data) {
     console.log(data.apiAddress);
     _apiAddress = data.apiAddress;
 });
+chrome.storage.sync.get('webAppAddress', function(data) {
+    console.log(data.webAppAddress);
+    $("#webAppLink").attr("href", data.webAppAddress);
+});
 chrome.storage.sync.get('participant', function(data) {
     console.log(data.participant);
     setParticipantId(data.participant);
-})
+});
 
 // ---------------- DOM EVENTS ----------------
 
