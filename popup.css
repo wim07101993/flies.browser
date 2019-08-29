@@ -1,0 +1,31 @@
+* {
+    color: #757575;
+}
+
+button {
+    outline: none;
+}
+
+select {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    width: 155px;
+    height: 85px;
+    padding: 25px;
+}
+
+#score {
+    margin-left: 10px;
+    display: inline;
+}
+
+#footer {
+    margin-top: 10px
+}
